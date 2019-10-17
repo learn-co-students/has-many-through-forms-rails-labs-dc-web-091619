@@ -1,3 +1,6 @@
+User---<<<Comment>>---Post---<<Post_category>>---Category
+
+
 # Has Many Through Forms Rails Labs
 
 ## Overview
@@ -16,7 +19,7 @@ We've looked at setting up the associations behind posts with comments, categori
 7. Define a custom association writer for the primary model to properly instantiate associations with custom logic (like unique by name) on the nested params association data.
 8. Use fields_for to generate the association fields.
 
-## Instructions
+## Instructions  
 
 1. Create a form at `posts#new` to create a new post. The form should include check boxes for us to select categories as well as a text field to create a new category. You should do this with a nested form so that our controller stays thin. Also, typing in a `Category` name that already exists should not create a new category. Instead, if we type in a category that already exists, we should select it from the database and associate the post we've created with the existing category.
 
